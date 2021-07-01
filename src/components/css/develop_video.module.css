@@ -1,0 +1,40 @@
+.featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+}
+
+@media screen and (max-width: 1300px) {
+    .box {
+        margin-left: 5rem;
+    }
+
+    .featured {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+.shadow{
+    border:"1px solid #ccc";
+    border-radius: 4px;
+    box-shadow: rgba(145, 144, 144, 0.3) 0px 4px 66px, rgba(169, 166, 166, 0.3) 0px 3px 17px, rgba(184, 182, 182, 0.5) 0px -1px
+   
+}
+
+
+.shadow:hover{
+    border:"1px solid #ccc";
+    border-radius: 4px;
+    box-shadow: rgba(169, 167, 167, 0.5) 0px 8px 17px;
+    transition: transform 0.1s ease 0s;
+    transform: scale(1.02);
+} 
+
+

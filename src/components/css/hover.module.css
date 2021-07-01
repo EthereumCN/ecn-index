@@ -1,0 +1,21 @@
+.ccc{
+    margin-bottom: 1.3rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    font-size: 1.8rem;
+    font-weight:900;
+    color: #fff;
+    padding: 2px 0px 1px;
+    cursor: pointer;
+    background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgba(238, 119, 28, 0.35) calc(50% - 9px), rgba(238, 119, 28, 0.35) 100%);
+    transition: all 120ms ease-in-out 0s;
+    background-size: 100% 200%;
+    background-position: 0px 0px;
+    word-break: break-word;
+}
+
+
+.ccc:hover {
+    background-image: linear-gradient(transparent 0%, transparent calc(50% - 9px), rgb(238, 119, 28) calc(50% - 9px), rgb(238, 119, 28) 100%);
+    background-position: 0px 100%;
+}

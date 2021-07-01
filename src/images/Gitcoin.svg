@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="23px" viewBox="0 0 19 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Gitcoin Grants</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.797084263">
+        <g id="ECN-footer-1440" transform="translate(-911.000000, -294.000000)">
+            <g id="编组-18" transform="translate(912.000000, 260.000000)">
+                <g id="Gitcoin-Grants" transform="translate(0.000000, 34.000000)">
+                    <path d="M15.5,7.97190652 C13.9365752,6.15271497 11.615509,5 9.02443775,5 C4.31652078,5 0.5,8.80557963 0.5,13.5 C0.5,18.1944204 4.31652078,22 9.02443775,22" id="路径" stroke="#FFFFFF" stroke-width="2"></path>
+                    <rect id="矩形" stroke="#FFFFFF" fill="#D8D8D8" transform="translate(12.611016, 10.106444) rotate(-45.000000) translate(-12.611016, -10.106444) " x="9.11101556" y="9.60644428" width="7" height="1"></rect>
+                    <rect id="矩形备份-2" stroke="#FFFFFF" fill="#D8D8D8" transform="translate(12.616428, 17.152608) rotate(42.000000) translate(-12.616428, -17.152608) " x="9.11642822" y="16.652608" width="7" height="1"></rect>
+                    <rect id="矩形" fill="#FFFFFF" x="14" y="19" width="2" height="4"></rect>
+                    <circle id="椭圆形" stroke="#FFFFFF" stroke-width="2" cx="8" cy="13.5" r="2.5"></circle>
+                    <path d="M15.122831,15.4699615 C15.122831,12.9846801 13.1081124,10.9699615 10.622831,10.9699615" id="路径" stroke="#FFFFFF" stroke-width="2" transform="translate(12.872831, 13.219962) rotate(45.000000) translate(-12.872831, -13.219962) "></path>
+                    <rect id="矩形" stroke="#FFFFFF" x="8.5" y="21.5" width="7" height="1"></rect>
+                    <line x1="4.72866534" y1="0.208470114" x2="4.72565179" y2="9.52002403" id="路径-2" stroke="#FFFFFF" stroke-width="2"></line>
+                    <line x1="8.72866534" y1="0.208470114" x2="8.5" y2="5.5" id="路径-2备份" stroke="#FFFFFF" stroke-width="2"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

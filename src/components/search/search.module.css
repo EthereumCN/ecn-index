@@ -1,0 +1,29 @@
+@media screen and (min-width: 1200px) {
+    .box {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+    .box {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    .box {
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .box {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .box {
+        width: 20px;
+    }
+}

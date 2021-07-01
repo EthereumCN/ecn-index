@@ -1,0 +1,104 @@
+@media screen and (min-width: 1920px) {
+    .box {
+     width:calc(50.7% - 0.02px)
+    }
+
+}
+
+@media screen and (min-width: 1845px) and (max-width: 1919px) {
+    .box {
+        width:  calc(50.7% - 0.02px)
+    }
+
+}
+
+
+@media screen and (min-width: 1810px) and (max-width: 1844px) {
+    .box {
+        width:  calc(48.7% - 0.01px)
+    }
+
+}
+
+
+@media screen and (min-width: 1780px) and (max-width: 1809px) {
+    .box {
+        width:  calc(48.7% - 0.01px)
+    }
+
+}
+
+@media screen and (min-width: 1680px) and (max-width: 1779px) {
+    .box {
+        width:  calc(40.83% - 0.01px)
+    }
+
+}
+
+
+@media screen and (min-width: 1580px) and (max-width: 1679px) {
+    .box {
+        width:  calc(40.94% - 0.01px)
+    }
+
+}
+
+
+@media screen and (min-width: 1495px) and (max-width: 1579px) {
+    .box {
+        width:  calc(40.5% - 0.01px)
+    }
+ 
+}
+
+
+@media screen and (min-width: 1494px) and (max-width: 1579px)  {
+    .box {
+        width:  calc(35.5% - 10px)
+    }
+
+    .onebox {
+       margin-right: 10rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1440px) and (max-width: 1493px)  {
+    
+    
+    .box {
+        width:  calc(35.5% - 50px)
+    }
+
+    .onebox {
+       margin-left: 2rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1439px) {
+    .onebox {
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1278px) {
+    .useEth {
+        display: none !important;
+    }
+
+}
+
+
+@media screen and (max-width: 1010px) {
+    .gas {
+        display: none;
+    }
+
+}

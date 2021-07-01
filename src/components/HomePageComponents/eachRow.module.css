@@ -1,0 +1,18 @@
+.rowsp::before{
+    content: "";
+    flex: 1 1 0%;
+    border-bottom: 2px solid rgb(194, 202, 214);
+    box-sizing: inherit;
+    margin-bottom: 1rem;
+    margin-right: 30px;
+}
+
+.rowsp::after{
+    content: "";
+    flex: 1 1 0%;
+    border-bottom: 2px solid rgb(194, 202, 214);
+    box-sizing: inherit;
+    margin-bottom: 1rem;
+    margin-left: 30px;
+}
+
