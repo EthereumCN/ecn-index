@@ -1,9 +1,12 @@
-# Dependency directories
-node_modules/
+# Project dependencies
+.cache
+node_modules
+yarn-error.log
 
-# gatsby files
-.cache/
+# Build directory
+/public
+.DS_Store
 
-# Mac files
-.DS_Store/
-
+# Secrets
+.env*
+!.env.sample
