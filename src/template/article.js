@@ -13,11 +13,10 @@ import footnotes from 'remark-footnotes'
 import "katex/dist/katex.min.css"
 import rehypeRaw from 'rehype-raw'
 import gfm from "remark-gfm"
-
-// 底部
-import Footer from "../components/FooterComponents/Footer"
-
 import ReactMarkdown from "react-markdown"
+
+
+
 
 const Article = ({ location, data }) => {
   const post = data.strapiArticles
@@ -34,6 +33,30 @@ const Article = ({ location, data }) => {
       )
     },
     image: ({ src, alt }) => {
+      return (
+        <Box textAlign="center">
+          <Zoom>
+            {console.log(src)}
+            <img src={src} alt={alt} />
+          </Zoom>
+        </Box>
+      )
+    },
+  }
+
+
+  const components = {
+    code({node, inline, className, children, ...props}) {
+      const match = /language-(\w+)/.exec(className || '')
+      return !inline && match ? (
+        <SyntaxHighlighter style={twilight} language={match[1]} PreTag="div" children={String(children).replace(/\n$/, '')} {...props} />
+      ) : (
+        <code className={className} {...props}>
+          {children}
+        </code>
+      )
+    },
+    img: ({ src, alt }) => {
       return (
         <Box textAlign="center">
           <Zoom>
@@ -115,7 +138,8 @@ const Article = ({ location, data }) => {
         <ReactMarkdown
           remarkPlugins={[remarkMath,footnotes,gfm]}
           rehypePlugins={[rehypeKatex,rehypeRaw]}
-          renderers={renderers}
+          // renderers={renderers}
+          components={components}
           children={post.content}
           className="content"
           escapeHtml={true}
