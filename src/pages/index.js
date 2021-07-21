@@ -402,7 +402,7 @@ const Index = () => {
         <Box h="3.5rem" />
         {/* 第三栏 */}
         <Eachrow data={Eth2} rowName="ETH 2.0" />
-        new array
+    
         <Eachrow data={Layer2} rowName="扩容方案" />
         {/* 第四栏 */}
         <Eachrow data={Technology} rowName="技术" />
