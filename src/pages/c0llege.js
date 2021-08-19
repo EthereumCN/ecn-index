@@ -88,8 +88,8 @@ const C0llege = () => {
         </BreadcrumbItem>
       </Breadcrumb>
       {/* pc端 */}
-      <Box display={["none", "none", "inline", "inline"]} >
-        <Box  mb="8rem">
+      <Box display={["none", "none", "inline", "inline"]}>
+        <Box mb="8rem">
           {/* 第一行 */}
           <Flex justifyContent="space-between" backgroundColor="#111415">
             {/* 左侧栏 */}
@@ -98,13 +98,17 @@ const C0llege = () => {
                 简介
               </Heading>
               <Text color="#fff" mb="1rem">
- 以太坊 (Ethereum) 是一个基于区块链技术，为去中心化应用程序而生的全球开源平台。在以太坊上，所有人都可以管理数字资产，编写智能合约，开发或者运行程序，而且不受地域限制。
+                以太坊 (Ethereum)
+                是一个基于区块链技术，为去中心化应用程序而生的全球开源平台。在以太坊上，所有人都可以管理数字资产，编写智能合约，开发或者运行程序，而且不受地域限制。
               </Text>
               <Text color="#fff" mb="1rem">
-  以太坊主要创始人 Vitalik Buterin 受到比特币及社区的启发，在2013年末发布了以太坊白皮书《以太坊：下一代加密货币与去中心化应用平台》，并在2014年1月宣布正式启动以太坊项目。
+                以太坊主要创始人 Vitalik Buterin
+                受到比特币及社区的启发，在2013年末发布了以太坊白皮书《以太坊：下一代加密货币与去中心化应用平台》，并在2014年1月宣布正式启动以太坊项目。
               </Text>
               <Text color="#fff" mb="1rem">
-    不同于比特币，以太坊经过一系列的重新设计，包括 EVM (以太坊虚拟机，Etheruem Virtual Machine)、账户系统和智能合约等系统组件，释放了区块链前所未有的潜力。
+                不同于比特币，以太坊经过一系列的重新设计，包括 EVM
+                (以太坊虚拟机，Etheruem Virtual
+                Machine)、账户系统和智能合约等系统组件，释放了区块链前所未有的潜力。
               </Text>
 
               {/* 下一栏 */}
@@ -130,35 +134,39 @@ const C0llege = () => {
               <Flex justifyContent="space-between" h="50%">
                 {/* 左侧/右侧 */}
                 <Box w="49%" backgroundColor="#16191a">
-                  <Heading color="#fff" mb="1rem">
+                  <Heading color="#fff" mb="0.8rem">
                     目录
                   </Heading>
-                  <Text color="#fff" mb="1rem">
+                  <Text color="#fff" mb="0.8rem">
                     <a href="https://knol.ethereum.cn/" target="_blank">
                       Hello 以太坊
                     </a>
                   </Text>
-                  <Text color="#fff" mb="1rem">
-                    <a href="https://knol.ethereum.cn/use_ethereum" target="_blank">
-                    使用以太坊
+                  <Text color="#fff" mb="0.8rem">
+                    <a
+                      href="https://knol.ethereum.cn/use_ethereum"
+                      target="_blank"
+                    >
+                      使用以太坊
                     </a>
                   </Text>
-                  <Text color="#fff" mb="1rem">
+                  <Text color="#fff" mb="0.8rem">
                     <a href="https://eth2.ethereum.cn/"> ETH 2.0 </a>
                   </Text>
-                  <Text color="#fff" mb="1rem">
+                  <Text color="#fff" mb="0.8rem">
                     <a href="https://knol.ethereum.cn/glossary">
                       {" "}
                       以太坊术语列表
                     </a>
                   </Text>
-                  <Text color="#fff" mb="1rem">
+                  <Text color="#fff" mb="0.8rem">
                     <a href="https://layer2.ethereum.cn/ZK_Rollups">
                       {" "}
                       Layer2 扩容
                     </a>
                   </Text>
                 </Box>
+
                 <Box w="49%" backgroundColor="#141618">
                   <Heading color="#fff" mb="1rem" textAlign="right">
                     冷知识
@@ -172,11 +180,13 @@ const C0llege = () => {
               <Box
                 mt="1%"
                 backgroundColor="#121516"
-                h="47%"
+                h="48%"
                 color="#fff"
                 position="realative"
               >
-                <Box my="0.5rem">
+               
+
+                <Box py="0.5rem">
                   <Link
                     href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"
                     target="_blank"
@@ -187,17 +197,17 @@ const C0llege = () => {
                     以太坊2.0是什么？
                   </Link>
                 </Box>
-                <Box my="0.5rem">
+                <Box py="0.5rem">
                   <Link
                     href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E4%BB%A5%E5%A4%AA%E5%9D%8A10%E5%92%8C%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"
                     target="_blank"
                     color="#fff"
                     mb=".5rem"
                   >
-                   以太坊1.0和以太坊2.0的区别是什么？
+                    以太坊1.0和以太坊2.0的区别是什么？
                   </Link>
                 </Box>
-                <Box my="0.5rem">
+                <Box py="0.5rem">
                   <Link
                     href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E5%AE%9E%E7%8E%B0%E4%B9%8B%E5%90%8E%E4%BC%9A%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88%E6%94%B9%E5%8F%98%EF%BC%9F"
                     target="_blank"
@@ -207,7 +217,7 @@ const C0llege = () => {
                     以太坊2.0实现之后会带来什么改变？
                   </Link>
                 </Box>
-                <Box my="0.5rem">
+                <Box py="0.5rem">
                   <Link
                     href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E4%B8%AD%E7%9A%84proof-of-stake%EF%BC%88%E6%9D%83%E7%9B%8A%E8%AF%81%E6%98%8E%EF%BC%89%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"
                     target="_blank"
@@ -217,7 +227,7 @@ const C0llege = () => {
                     以太坊2.0中的Proof of Stake（权益证明）是什么？
                   </Link>
                 </Box>
-                <Box my="0.5rem">
+                <Box py="0.5rem">
                   <Link
                     href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E7%9A%84staking%EF%BC%9F"
                     color="#fff"
@@ -266,7 +276,7 @@ const C0llege = () => {
 
       {/* 手机端 */}
       <Box display={["inline", "inline", "none", "none"]}>
-        <Box paddingX="2rem" mb="4rem"> 
+        <Box paddingX="2rem" mb="4rem">
           {/* 第一行 */}
           <Box backgroundColor="#111415">
             {/* 左侧栏 */}
@@ -328,65 +338,63 @@ const C0llege = () => {
               <Heading color="#fff" mb="1rem" mt="3rem">
                 冷知识
               </Heading>
-              <Text color="#fff" mb="1rem">
-                
-              </Text>
+              <Text color="#fff" mb="1rem"></Text>
               <Divider />
               {/* FAQ */}
               <Heading color="#fff" mb="1rem" mt="3rem">
                 FAQ
               </Heading>
               <Box my="0.5rem" color="#fff">
-                  <Link
-                    href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"
-                    target="_blank"
-                    color="#fff"
-                    mb=".5rem"
-                    mt="1rem"
-                  >
-                    以太坊2.0是什么？
-                  </Link>
-                </Box>
-                <Box my="0.5rem" color="#fff">
-                  <Link
-                    href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E4%BB%A5%E5%A4%AA%E5%9D%8A10%E5%92%8C%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"
-                    target="_blank"
-                    color="#fff"
-                    mb=".5rem"
-                  >
-                   以太坊1.0和以太坊2.0的区别是什么？
-                  </Link>
-                </Box>
-                <Box my="0.5rem" color="#fff">
-                  <Link
-                    href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E5%AE%9E%E7%8E%B0%E4%B9%8B%E5%90%8E%E4%BC%9A%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88%E6%94%B9%E5%8F%98%EF%BC%9F"
-                    target="_blank"
-                    color="#fff"
-                    mb=".5rem"
-                  >
-                    以太坊2.0实现之后会带来什么改变？
-                  </Link>
-                </Box>
-                <Box my="0.5rem" color="#fff">
-                  <Link
-                    href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E4%B8%AD%E7%9A%84proof-of-stake%EF%BC%88%E6%9D%83%E7%9B%8A%E8%AF%81%E6%98%8E%EF%BC%89%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"
-                    target="_blank"
-                    color="#fff"
-                    mb=".5rem"
-                  >
-                    以太坊2.0中的Proof of Stake（权益证明）是什么？
-                  </Link>
-                </Box>
-                <Box my="0.5rem" color="#fff">
-                  <Link
-                    href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E7%9A%84staking%EF%BC%9F"
-                    color="#fff"
-                    target="_blank"
-                    mb=".5rem"
-                  >
-                    如何参与以太坊2.0的staking？
-                  </Link>
-                </Box>
+                <Link
+                  href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"
+                  target="_blank"
+                  color="#fff"
+                  mb=".5rem"
+                  mt="1rem"
+                >
+                  以太坊2.0是什么？
+                </Link>
+              </Box>
+              <Box my="0.5rem" color="#fff">
+                <Link
+                  href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E4%BB%A5%E5%A4%AA%E5%9D%8A10%E5%92%8C%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"
+                  target="_blank"
+                  color="#fff"
+                  mb=".5rem"
+                >
+                  以太坊1.0和以太坊2.0的区别是什么？
+                </Link>
+              </Box>
+              <Box my="0.5rem" color="#fff">
+                <Link
+                  href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E5%AE%9E%E7%8E%B0%E4%B9%8B%E5%90%8E%E4%BC%9A%E5%B8%A6%E6%9D%A5%E4%BB%80%E4%B9%88%E6%94%B9%E5%8F%98%EF%BC%9F"
+                  target="_blank"
+                  color="#fff"
+                  mb=".5rem"
+                >
+                  以太坊2.0实现之后会带来什么改变？
+                </Link>
+              </Box>
+              <Box my="0.5rem" color="#fff">
+                <Link
+                  href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E4%B8%AD%E7%9A%84proof-of-stake%EF%BC%88%E6%9D%83%E7%9B%8A%E8%AF%81%E6%98%8E%EF%BC%89%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"
+                  target="_blank"
+                  color="#fff"
+                  mb=".5rem"
+                >
+                  以太坊2.0中的Proof of Stake（权益证明）是什么？
+                </Link>
+              </Box>
+              <Box my="0.5rem" color="#fff">
+                <Link
+                  href="https://eth2.ethereum.cn/eth2-chang-jian-wen-ti-jie-da/#%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E4%BB%A5%E5%A4%AA%E5%9D%8A20%E7%9A%84staking%EF%BC%9F"
+                  color="#fff"
+                  target="_blank"
+                  mb=".5rem"
+                >
+                  如何参与以太坊2.0的staking？
+                </Link>
+              </Box>
             </Box>
 
             {/* 右侧栏 */}
