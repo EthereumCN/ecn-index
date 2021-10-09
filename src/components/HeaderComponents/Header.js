@@ -367,7 +367,7 @@ const Header = () => {
                 </PseudoBox>
 
                 {/* 第五行 */}
-                <Box display="inline" className={StatModule.useEth}>
+                {/* <Box display="inline" className={StatModule.useEth}>
                   <PseudoBox
                     as="li"
                     float="left"
@@ -524,7 +524,7 @@ const Header = () => {
                       )}
                     </Menu>
                   </li>
-                </Box>
+                </Box> */}
               </ul>
             </nav>
           </Box>
@@ -588,7 +588,7 @@ const Header = () => {
         </>
       </Box>
 
-      <GasFee />
+      {/* <GasFee /> */}
     </Box>
   )
 }
