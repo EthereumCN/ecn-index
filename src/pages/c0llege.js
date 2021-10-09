@@ -142,14 +142,14 @@ const C0llege = () => {
                       Hello 以太坊
                     </a>
                   </Text>
-                  <Text color="#fff" mb="0.8rem">
+                  {/* <Text color="#fff" mb="0.8rem">
                     <a
                       href="https://knol.ethereum.cn/use_ethereum"
                       target="_blank"
                     >
                       使用以太坊
                     </a>
-                  </Text>
+                  </Text> */}
                   <Text color="#fff" mb="0.8rem">
                     <a href="https://eth2.ethereum.cn/"> ETH 2.0 </a>
                   </Text>
