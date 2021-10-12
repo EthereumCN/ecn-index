@@ -288,15 +288,15 @@ const Footer = () => {
                 >
                   {" "}
                   Gitcoin捐赠
-//                   <Box as="span">
-//                     <Link
-//                       href="https://www.notion.so/Join-ECN-2bc1df1e25024002bb33de18ce6083c2"
-//                       isExternal
-//                       _hover={{ "text-decoration": "none", color: "#ec751d" }}
-//                     >
-//                       &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; 加入我们
-//                     </Link>
-//                   </Box>
+          {/* <Box as="span">
+                  <Link
+                      href="https://www.notion.so/Join-ECN-2bc1df1e25024002bb33de18ce6083c2"
+                      isExternal
+                      _hover={{ "text-decoration": "none", color: "#ec751d" }}
+                    >
+                      &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; 加入我们
+                    </Link>
+                  </Box> */}
                 </Box>
               </Flex>
             </Flex>
