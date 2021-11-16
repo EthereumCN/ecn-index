@@ -430,8 +430,8 @@ const Index = () => {
         <PhoneEachRow data={Eth2[0]} />
 
         {/* 第一个导航按钮 */}
-        <Link to="扩容方案">
-          <PhoneButton color="cyan" value="Layer2" />
+        <Link to="Layer2">
+          <PhoneButton color="cyan" value="扩容方案" />
         </Link>
         <PhoneEachRow data={Layer2[0]} />
 
