@@ -14,6 +14,7 @@ const PhoneSecondRow = () => {
       ) {
         nodes {
           id
+          chineseMainTag
           path
           mainTag
           summary

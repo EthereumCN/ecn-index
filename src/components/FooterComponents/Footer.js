@@ -169,7 +169,7 @@ const Footer = () => {
                 {/* wechat */}
                 <Link
                   aria-label="wechat"
-                  href="https://i.ibb.co/X4P79TY/Wechat-IMG10.jpg"
+                  href="https://i.ibb.co/mBgmDgF/footer-wechat.webp"
                   _hover={{ textDecoration: "none" }}
                   isExternal
                   cursor="pointer"
@@ -409,7 +409,7 @@ const Footer = () => {
             {/* wechat */}
             <Link
               aria-label="wechat"
-              href="https://i.ibb.co/X4P79TY/Wechat-IMG10.jpg"
+              href="https://i.ibb.co/mBgmDgF/footer-wechat.webp"
               _hover={{ textDecoration: "none" }}
               isExternal
               cursor="pointer"

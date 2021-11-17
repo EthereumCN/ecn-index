@@ -21,7 +21,7 @@ const Item = ({ data,order }) => {
             backgroundColor="#ee771c"
             display="inline-box"
           >
-            {data.mainTag}
+            {data.chineseMainTag}
           </Heading>
 
           {/* title */}
