@@ -153,7 +153,7 @@ const Header = () => {
                               fontFamily="'Noto Sans SC', sans-serif"
                             >
                               {" "}
-                              <Link to="/Eth2">ETH 2.0</Link>
+                              <Link to="/Eth2">共识层</Link>
                             </PseudoBox>
                           </MenuItem>
 
@@ -171,7 +171,7 @@ const Header = () => {
                               fontFamily="'Noto Sans SC', sans-serif"
                             >
                               {" "}
-                              <Link to="/Layer2">Layer2</Link>
+                              <Link to="/Layer2">扩容方案</Link>
                             </PseudoBox>
                           </MenuItem>
 
@@ -238,7 +238,7 @@ const Header = () => {
                               fontSize="1rem"
                               fontFamily="'Noto Sans SC', sans-serif"
                             >
-                              <Link to="/Eth1x">ETH 1.X</Link>
+                              <Link to="/Eth1x">执行层</Link>
                             </PseudoBox>
                           </MenuItem>
                           <MenuItem

@@ -43,11 +43,11 @@ const Category = (props) => {
         </BreadcrumbItem>
 
         <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink as={Link} to="#">ETH 1.x</BreadcrumbLink>
+          <BreadcrumbLink as={Link} to="#">执行层</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
         <Heading fontSize="2.5rem" fontFamily="NotoSansSC-Regular" color="#fff">
-        ETH 1.x
+        执行层
         </Heading>
         <Divider w="100%"  borderColor="#ddd" mt="1vw" mx="auto" />
       </Box>

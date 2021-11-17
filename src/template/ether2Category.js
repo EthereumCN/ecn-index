@@ -49,7 +49,7 @@ const Category = props => {
         </BreadcrumbItem>
 
         <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink as={Link} to="#">ETH2.0</BreadcrumbLink>
+          <BreadcrumbLink as={Link} to="#">共识层</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
 
@@ -58,7 +58,7 @@ const Category = props => {
             fontFamily="NotoSansSC-Regular"
             color="#fff"
           >
-           ETH 2.0
+          共识层
           </Heading>
 
           <Divider w="100%"  borderColor="#ddd" mt="1vw" mx="auto" />
