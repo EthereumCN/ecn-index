@@ -401,7 +401,7 @@ const Index = () => {
         </Box> */}
         <Box h="3.5rem" />
         {/* 第三栏 */}
-        <Eachrow data={Eth2} rowName="ETH 2.0" />
+        <Eachrow data={Eth2} rowName="共识层" />
     
         <Eachrow data={Layer2} rowName="扩容方案" />
         {/* 第四栏 */}
@@ -411,7 +411,7 @@ const Index = () => {
         {/* 第六栏 */}
         <Eachrow data={DeFi} rowName="DeFi" />
         {/* 第七栏 */}
-        <Eachrow data={Eth1x} rowName="ETH 1.X" />
+        <Eachrow data={Eth1x} rowName="执行层" />
         {/* 第八栏 */}
         <Eachrow data={Ecosystem} rowName="生态" />
         {/* 第九栏目 */}
@@ -425,7 +425,7 @@ const Index = () => {
 
         {/* 第一个导航按钮 */}
         <Link to="Eth2">
-          <PhoneButton color="red" value="ETH 2.0" />
+          <PhoneButton color="red" value="共识层" />
         </Link>
         <PhoneEachRow data={Eth2[0]} />
 
@@ -451,7 +451,7 @@ const Index = () => {
         <PhoneEachRow data={DeFi[0]} />
 
         <Link to="Eth1x">
-          <PhoneButton color="purple" value="ETH 1.X" />
+          <PhoneButton color="purple" value="执行层" />
         </Link>
         <PhoneEachRow data={Eth1x[0]} />
 
