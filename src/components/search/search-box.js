@@ -13,7 +13,7 @@ export default connectSearchBox(
         as="input"
         className="SearchInput"
         type="text"
-        placeholder="Eth2.0"
+        placeholder="扩容方案"
         aria-label="Search"
         onChange={e => refine(e.target.value)}
         value={currentRefinement}
