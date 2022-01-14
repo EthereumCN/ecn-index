@@ -9,3 +9,6 @@ yarn-error.log
 # Secrets
 .env*
 !.env.sample
+
+public/
+yarn.lock

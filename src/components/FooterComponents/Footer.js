@@ -15,7 +15,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import Img from "gatsby-image"
 import { FaTwitter, FaGithub, FaEnvelope, FaRss } from "react-icons/fa"
-import { AiFillWechat } from "react-icons/ai";
+import { AiFillWechat } from "react-icons/ai"
 import { RiDiscordFill } from "react-icons/ri"
 import { BiDonateHeart } from "react-icons/bi"
 import Gitcoin from "../../images/Gitcoin.svg"
@@ -64,7 +64,7 @@ const Footer = () => {
         <Box
           maxW="1920px"
           display={["none", "none", "inline", "inline"]}
-        // py={["1rem", "1rem", "3rem", "3rem"]}
+          // py={["1rem", "1rem", "3rem", "3rem"]}
         >
           {/* first  part*/}
           {/* <Grid
@@ -222,7 +222,7 @@ const Footer = () => {
                 </Link>
               </Flex>
               {/* donate */}
-              <Flex
+              {/* <Flex
                 w="368px"
                 justifyContent="space-between"
                 color="#fff"
@@ -257,48 +257,9 @@ const Footer = () => {
                     <Box>0xaf30B0285Bb41bdB...4a533874901E4943522</Box>
                   </CopyToClipboard>
                 </Box>
-              </Flex>
+              </Flex> */}
 
               {/* gitcoin */}
-              <Flex
-                w="368px"
-                //   justifyContent="space-between"
-                color="#fff"
-                margin="0 auto"
-                //   w="368px"
-                alignItems="center"
-              >
-                <Link
-                  aria-label="Gitcoin"
-                  isExternal
-                  href="https://gitcoin.co/grants/380/ethereumcn"
-                  fontSize="0.5rem"
-                >
-                  <Gitcoin />
-                </Link>
-                <Box
-                  fontSize="1rem"
-                  pt="0.2rem"
-                  ml="0.7rem"
-                  role="link"
-                  onClick={() => {
-                    navigate("https://gitcoin.co/grants/380/ethereumcn")
-                  }}
-                  cursor="pointer"
-                >
-                  {" "}
-                  Gitcoin捐赠
-          {/* <Box as="span">
-                  <Link
-                      href="https://www.notion.so/Join-ECN-2bc1df1e25024002bb33de18ce6083c2"
-                      isExternal
-                      _hover={{ "text-decoration": "none", color: "#ec751d" }}
-                    >
-                      &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; 加入我们
-                    </Link>
-                  </Box> */}
-                </Box>
-              </Flex>
             </Flex>
             {/* </Grid> */}
           </Flex>
@@ -392,8 +353,8 @@ const Footer = () => {
               {" "}
               <FaTwitter />
             </Link>
-                  {/* discord */}
-                  <Link
+            {/* discord */}
+            <Link
               aria-label="discord"
               href="https://discord.gg/KUywx3JJJU"
               _hover={{ textDecoration: "none" }}
@@ -448,7 +409,7 @@ const Footer = () => {
               {" "}
               <FaEnvelope />
             </Link>
-      
+
             {/* rss */}
             <Link
               aria-label="Rss"
@@ -462,79 +423,6 @@ const Footer = () => {
               {" "}
               <FaRss />
             </Link>
-          </Flex>
-
-          {/* donate */}
-          <Flex
-            w="368px"
-            justifyContent="space-between"
-            color="#fff"
-            margin="2rem auto"
-            mb="1rem"
-          //   w="368px"
-          >
-            <Link
-              fontSize="1rem"
-              aria-label="donate"
-              isExternal
-              href="https://etherscan.io/address/0xaf30B0285Bb41bdBB732E4a533874901E4943522"
-            >
-              <BiDonateHeart />
-            </Link>
-            <Box
-              ml="0.7rem"
-              fontSize="0.7rem"
-              _hover={{ color: "#d9d9d9" }}
-              as="span"
-              cursor="pointer"
-              fontSize="1rem"
-              onClick={() =>
-                toast({
-                  title: "提示",
-                  description: "地址复制成功",
-                  status: "success",
-                  duration: 9000,
-                  isClosable: true,
-                })
-              }
-            >
-              <CopyToClipboard
-                text={"0xaf30B0285Bb41bdBB732E4a533874901E4943522"}
-              >
-                <Box>0xaf30B0285Bb41bdBB732E4a533874901E4943522 </Box>
-              </CopyToClipboard>
-            </Box>
-          </Flex>
-
-          {/* gitcoin */}
-          <Flex
-            w="368px"
-            //   justifyContent="space-between"
-            color="#fff"
-            margin="0 auto"
-          //   w="368px"
-          >
-            <Link
-              fontSize="0.5rem"
-              aria-label="Gitcoin"
-              isExternal
-              href="https://gitcoin.co/grants/380/ethereumcn"
-            >
-              <Gitcoin />
-            </Link>
-            <Box
-              fontSize="0.9rem"
-              ml="0.5rem"
-              cursor="pointer"
-              role="link"
-              onClick={() => {
-                navigate("https://gitcoin.co/grants/380/ethereumcn")
-              }}
-              cursor="pointer"
-            >
-              {" "}
-              Gitcoin捐赠
-            </Box>
           </Flex>
 
           <Box w="368px" margin="0 auto" pb="2rem">
