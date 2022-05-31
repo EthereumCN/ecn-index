@@ -20,11 +20,11 @@ module.exports = {
       options: {
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        queries: require("./src/utils/algolia-queries")
+        queries: require("./src/utils/algolia-queries"),
       },
     },
-  
-    { 
+
+    {
       resolve: `gatsby-plugin-baidu-analytics`,
       options: {
         // baidu analytics siteId
@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: "https://ecn-strapi.21cloudbox.com",
+        apiURL: process.env.STRAPI_URL,
         queryLimit: 1000, // Default to 100
         contentTypes: [
           `articles`,
@@ -80,8 +80,8 @@ module.exports = {
                 Object.assign({}, edge.node, {
                   description: edge.node.summary,
                   date: edge.node.publishDate,
-                  url: 'https://www.ethereum.cn/'+ edge.node.path,
-                  guid: 'https://www.ethereum.cn/'+ edge.node.path,
+                  url: "https://www.ethereum.cn/" + edge.node.path,
+                  guid: "https://www.ethereum.cn/" + edge.node.path,
                   custom_elements: [{ "content:encoded": edge.node.content }],
                 })
               ),
@@ -108,9 +108,10 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mailchimp",
       options: {
-        endpoint: "https://ethereum.us2.list-manage.com/subscribe/post?u=ab5eff800c44ca67b27f1581f&amp;id=b6319ace8c",
+        endpoint:
+          "https://ethereum.us2.list-manage.com/subscribe/post?u=ab5eff800c44ca67b27f1581f&amp;id=b6319ace8c",
         timeout: 3500,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -123,15 +124,15 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
-    },  
+    },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /images/ // See below to configure properly
-        }
-      }
-    }
+          include: /images/, // See below to configure properly
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
