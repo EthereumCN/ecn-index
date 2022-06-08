@@ -61,7 +61,7 @@ const Article = ({ location, data }) => {
     },
     img: ({ src, alt }) => {
       // console.log("src")
-      if (!src.startsWith("https")) {
+      if (!src.startsWith("https") && post.content_images) {
         const image = post.content_images.find(element => element.base === src)
         // console.log(image)
 

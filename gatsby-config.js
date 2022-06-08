@@ -41,7 +41,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-strapi`,
+      resolve: `@ecn/gatsby-source-strapi`,
       options: {
         apiURL: process.env.STRAPI_URL,
         queryLimit: 1000, // Default to 100
