@@ -55,6 +55,11 @@ module.exports = {
           `authors`,
           `trivias`,
         ],
+        markdownImages: {
+          typesToParse: {
+            articles: ["content"],
+          },
+        },
       },
     },
     `gatsby-transformer-sharp`,
