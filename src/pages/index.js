@@ -384,7 +384,7 @@ const Index = () => {
         modifiedDate={new Date(Date.now()).toISOString()}
       />
       {/* pc端 */}
-      <Box display={["none", "none", "inline", "inline"]}  margin="0 auto">
+      <Box display={["none", "none", "inline", "inline"]} margin="0 auto">
         {/* 第一栏 */}
         <Flex mt="10rem" flexWrap="wrap" justifyContent="space-between">
           <News />
@@ -402,7 +402,7 @@ const Index = () => {
         <Box h="3.5rem" />
         {/* 第三栏 */}
         <Eachrow data={Eth2} rowName="共识层" />
-    
+
         <Eachrow data={Layer2} rowName="扩容方案" />
         {/* 第四栏 */}
         <Eachrow data={Technology} rowName="技术" />

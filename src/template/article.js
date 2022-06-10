@@ -198,14 +198,6 @@ export const query = graphql`
       }
       content
       content_images {
-        childImageSharp {
-          original {
-            src
-          }
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
         base
         publicURL
       }
