@@ -78,5 +78,5 @@ jobs:
         with:
           message: 'updated static'
           new_branch: main
-          add: '. --force'
+          add: 'public --force'
           push: 'origin main --force'
