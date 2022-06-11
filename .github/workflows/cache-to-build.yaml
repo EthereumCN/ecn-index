@@ -38,9 +38,9 @@ jobs:
           path: |
             public
             .cache
-          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
+          key: ${{ runner.os }}-gatsby-build
           restore-keys: |
-            ${{ runner.os }}-gatsby-build-${{ github.run_id }}
+            ${{ runner.os }}-gatsby-build
 
       - run: yarn install --pure-lockfile
         name: Install dependencies
@@ -59,9 +59,9 @@ jobs:
           GATSBY_CONCURRENT_DOWNLOAD: ${{ secrets.GATSBY_CONCURRENT_DOWNLOAD }}
           STRAPI_URL: ${{ secrets.STRAPI_URL }}
 
-      - run: bash -O extglob -c 'rm -rf !(public|.cache|package.json)'
-        shell: bash
-        name: Clean up
+      # - run: bash -O extglob -c 'rm -rf !(public|.cache|package.json)'
+      #   shell: bash
+      #   name: Clean up
 
       - name: Commit to static branch
         uses: EndBug/add-and-commit@v9
