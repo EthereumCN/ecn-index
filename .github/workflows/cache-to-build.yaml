@@ -2,7 +2,10 @@ name: build CI
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - dev
+  repository_dispatch:
+    types: [strapibuild]
 
 jobs:
   build:
@@ -11,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: 'main'
+          ref: 'dev'
       - uses: actions/setup-node@v3
         with:
           node-version: 14
@@ -21,7 +24,7 @@ jobs:
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: Yarn cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir.outputs.dir }}
@@ -31,16 +34,23 @@ jobs:
 
       # In order to make gatsby incremental build works, it's necessary .cache
       # and public folder.
-      - name: Caching Gatsby
-        id: gatsby-cache-build
-        uses: actions/cache@v2
+      - name: Gatsby Cache Folder
+        uses: actions/cache@v3
+        id: gatsby-cache-folder
         with:
-          path: |
-            public
-            .cache
-          key: ${{ runner.os }}-build-gatsby-${{ github.run_id }}
+          path: .cache
+          key: ${{ runner.os }}-cache-gatsby
           restore-keys: |
-            ${{ runner.os }}-build-gatsby-${{ github.run_id }}
+            ${{ runner.os }}-cache-gatsby
+
+      - name: Gatsby Public Folder
+        uses: actions/cache@v3
+        id: gatsby-public-folder
+        with:
+          path: public/
+          key: ${{ runner.os }}-public-gatsby
+          restore-keys: |
+            ${{ runner.os }}-public-gatsby
 
       - run: yarn install --pure-lockfile
         name: Install dependencies
@@ -67,6 +77,6 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           message: 'updated static'
-          new_branch: static
+          new_branch: main
           add: '. --force'
-          push: 'origin static --force'
+          push: 'origin main --force'
