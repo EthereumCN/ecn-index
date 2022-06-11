@@ -80,3 +80,7 @@ jobs:
           new_branch: main
           add: 'public --force'
           push: 'origin main --force'
+
+      - run: curl -X POST ${{ secrets.DEPLOYHOOK }}
+        shell: bash
+        name: deploy
