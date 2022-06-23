@@ -277,18 +277,6 @@ const Footer = () => {
               borderTop="1px solid #fff"
               opacity="0.27"
             ></Box>
-
-            {/* icp  */}
-            <Link
-              _hover={{ color: "#999" }}
-              href="https://beian.miit.gov.cn/"
-              isExternal
-              fontWeight="400"
-              fontSize="0.8rem"
-              color="#fff"
-            >
-              <Box color="#999"> 蜀ICP备2021001286号 </Box>
-            </Link>
           </Box>
         </Box>
 
@@ -432,18 +420,6 @@ const Footer = () => {
               borderTop="1px solid #fff"
               opacity="0.27"
             ></Box>
-            {/* icp  */}
-            <Link
-              _hover={{ color: "#999" }}
-              color="rgba(0,0,0,0.6)"
-              href="https://beian.miit.gov.cn/"
-              isExternal
-              fontWeight="400"
-              fontSize="0.8rem"
-              color="#fff"
-            >
-              <Box color="#999"> 蜀ICP备2021001286号 </Box>
-            </Link>
           </Box>
         </Box>
       </BackgroundImage>
