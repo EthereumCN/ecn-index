@@ -7,7 +7,24 @@ import { Link } from "gatsby"
 const News = () => {
   const data = useStaticQuery(graphql`
     {
-      allStrapiArticles(sort: { order: DESC, fields: created_at }, limit: 1) {
+      allStrapiArticles(filter: { showAsHeadline: { eq: true} }, sort: { order: DESC, fields: created_at }, limit: 1) {
+        nodes {
+          id
+          path
+          title
+          summary
+          cover {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          publishDate(formatString: "YYYY-MM-DD")
+        }
+      }
+
+      fallback: allStrapiArticles(filter: { showTheArticle: { eq: true} }, sort: { order: DESC, fields: created_at }, limit: 1) {
         nodes {
           id
           path
@@ -26,7 +43,9 @@ const News = () => {
     }
   `)
 
-  let news = data.allStrapiArticles.nodes[0]
+
+
+  let news = data.allStrapiArticles.nodes[0] || data.fallback.nodes[0]
 
   return (
   

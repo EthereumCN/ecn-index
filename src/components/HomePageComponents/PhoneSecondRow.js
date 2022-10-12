@@ -8,7 +8,7 @@ const PhoneSecondRow = () => {
   const data = useStaticQuery(graphql`
     {
       allStrapiArticles(
-        filter: { showTheArticle: { eq: true } }
+        filter: { showTheArticle: { eq: true }, showAsHeadline: { ne: true} }
         limit: 3
         sort: { fields: publishDate, order: DESC }
       ) {
