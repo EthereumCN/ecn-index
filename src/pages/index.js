@@ -369,7 +369,7 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="以太坊中国"
+        title="以太坊中文"
         titleTemplate={data.site.siteMetadata.title}
         description={data.site.siteMetadata.description}
         image={
