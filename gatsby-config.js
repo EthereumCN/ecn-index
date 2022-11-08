@@ -4,7 +4,7 @@ module.exports = {
     title: `Ethereum Community Network`,
     description: `以太坊——全球的、开源的去中心化应用平台。DeFi？NFT？游戏？虚拟世界？每一个人都可以成为以太坊的开发者和用户！`,
     author: `@ECN以太坊社区网络`,
-    keywords: `以太坊,以太坊中国,Ethereum`,
+    keywords: `以太坊,以太坊中国,Ethereum,以太坊中文`,
     lastBuildDate: new Date(Date.now()).toISOString(),
     siteUrl: `http://ethereum.cn/`,
     twitterUsername: `@EthereumCN`,
