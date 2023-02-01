@@ -54,7 +54,10 @@ export const ExpressItem = ({
   url,
 }) => {
   return (
-    <ExpressItemA href={url || "#"} target="_blank">
+    <ExpressItemA
+      href={url || "javascript:void(0);"}
+      target={isLoading ? "_self" : "_blank"}
+    >
       {isLoading ? (
         <>
           <Skeleton height="20px" my="10px" w="100%" />

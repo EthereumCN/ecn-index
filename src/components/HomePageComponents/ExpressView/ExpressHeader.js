@@ -38,10 +38,10 @@ const ExpressHeader = () => {
         borderTopLeftRadius: "16px",
         backgroundColor: "#3D3D3D",
         display: "flex",
-        paddingLeft: "26px",
-        paddingRight: "23px",
+        // paddingLeft: "26px",
+        // paddingRight: "23px",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: "center",
       }}
     >
       <Heading>E群誌</Heading>
