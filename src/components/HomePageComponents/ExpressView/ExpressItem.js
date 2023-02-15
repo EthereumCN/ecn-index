@@ -37,6 +37,7 @@ const ExpressContentSpan = styled.span`
   width: 100%;
   margin-bottom: 10px;
   /* min-height: 66px; */
+  white-space: pre-line;
 
   color: #ffffff;
 `
