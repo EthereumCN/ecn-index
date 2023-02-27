@@ -26,6 +26,7 @@ import PhoneEachRow from "../components/HomePageComponents/PhoneEachRow"
 
 // 底部
 import Footer from "../components/FooterComponents/Footer"
+import ExpressView from "../components/HomePageComponents/ExpressView/index"
 
 const Index = () => {
   // const {siteMetadata} = props.data.site
@@ -386,9 +387,16 @@ const Index = () => {
       {/* pc端 */}
       <Box display={["none", "none", "inline", "inline"]} margin="0 auto">
         {/* 第一栏 */}
-        <Flex mt="10rem" flexWrap="wrap" justifyContent="space-between">
-          <News />
+        <Flex
+          minH={"577px"}
+          mt="10rem"
+          flexWrap="wrap"
+          justifyContent="space-between"
+          align={"center"}
+        >
           <Selected />
+          <News />
+          <ExpressView />
         </Flex>
         {/* 第二栏 */}
         {/* <Box
