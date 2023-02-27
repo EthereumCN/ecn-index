@@ -10,7 +10,7 @@ const Selected = () => {
   const data = useStaticQuery(graphql`
     {
       allStrapiArticles(
-        filter: { showTheArticle: { eq: true }, showAsHeadline: { ne: true} }
+        filter: { showTheArticle: { eq: true }, showAsHeadline: { ne: true } }
         limit: 3
         sort: { fields: publishDate, order: DESC }
       ) {
@@ -38,23 +38,23 @@ const Selected = () => {
   return (
     // container
     <PseudoBox
-      w={["100%", "100%", "48%", "48%"]}
-      minH="100%"
+      w={["100%", "100%", "20%", "20%"]}
+      h="577px"
       display="flex"
       flexDir="column"
       justifyContent="space-between"
     >
       {/* {console.log(nodes)} */}
       {/* 第一栏 */}
-      <Box h="31%">
+      <Box h="30%">
         <Item data={nodes[0]} order="flex-start" />
       </Box>
       {/* 第二栏 */}
-      <Box h="38%" borderY="1px solid gray">
+      <Box h="30%">
         <Item data={nodes[1]} order="auto" />
       </Box>
       {/* 第三栏 */}
-      <Box h="31%">
+      <Box h="30%">
         <Item data={nodes[2]} order="flex-end" />
       </Box>
     </PseudoBox>
