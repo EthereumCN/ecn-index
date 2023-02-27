@@ -54,7 +54,7 @@ const ExpressApp = () => {
   }, [currentDate, data?.navInfo.maxDate])
 
   useEffect(() => {
-    if (isSuccess && data)
+    if (isSuccess && data && data.navInfo && data.navInfo.currentDate)
       setCurrentDate(format(new Date(data?.navInfo.currentDate), "yyyy-MM-dd"))
   }, [isSuccess])
 
